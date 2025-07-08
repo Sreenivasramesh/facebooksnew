@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">facebook</h1>
+    <div class="signup-box">
+      <h2 class="start">Create a new account</h2>
+      <p class="start1">It's quick and easy.</p>
+      <hr class="separator" />
+      <form>
+        <div class="name-fields">
+          <input type="text" name="firstname" placeholder="First name" pattern="[A-Za-z]{2,}" title="Only letters, at least 2 characters" required />
+          <input type="text" name="lastname" placeholder="Last name" pattern="[A-Za-z]{2,}" title="Only letters, at least 2 characters" required />
+        </div>
+        <label class="tooltip ">Date of birth</label>
+        <div class="dob">
+          <select required>
+            <option>1</option><option>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option>
+            <option>7</option><option>8</option><option>9</option>
+            <option>10</option><option>11</option><option>12</option>
+            <option>13</option><option>14</option><option>15</option>
+            <option>16</option><option>17</option><option>18</option>
+            <option>19</option><option>20</option><option>21</option>
+            <option>22</option><option>23</option><option>24</option>
+            <option>25</option><option>26</option><option>27</option>
+            <option>28</option><option>29</option><option>30</option><option>31</option>
+          </select>
+          <select required>
+            <option>Jan</option><option>Feb</option><option>Mar</option>
+            <option>Apr</option><option>May</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option><option>Sep</option>
+            <option>Oct</option><option>Nov</option><option>Dec</option>
+          </select>
+          <select required>
+            <option>2000</option><option>2001</option><option>2002</option>
+            <option>2003</option><option>2004</option><option>2005</option>
+            <option>2006</option><option>2007</option><option>2008</option>
+            <option>2009</option><option>2010</option><option>2011</option>
+            <option>2012</option><option>2013</option><option>2014</option>
+            <option>2015</option><option>2016</option><option>2017</option>
+            <option>2018</option><option>2019</option><option>2020</option>
+            <option>2021</option><option>2022</option><option>2023</option>
+            <option>2024</option>
+          </select>
+        </div>
+
+        <label class="tooltip ">Gender</label>
+
+        <div class="gender">
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Custom</label>
+        </div>
+        
+        <div class="phone-group">
+          <select name="countryCode" required>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+61">🇦🇺 +61</option>
+            <option value="+81">🇯🇵 +81</option>
+           
+          </select>
+          <input type="tel" id="phone" name="phone"
+                 pattern="(?!.*(\d)\1{5})[0-9]{8,15}"
+                 maxlength="15"
+                 title="Phone number must be 8 to 15 digits. Don't use more than 5 repeated digits like 111111."
+                 placeholder="Enter phone number"
+                 required />          
+          
+        </div>
+        
+        
+        <input type="password" name="password" placeholder="New password"id="confirm-password" name="confirm-password"
+       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"
+       title="Must be at least 8 characters, include uppercase, lowercase, number, and special character"
+       required />  
+
+
+        <p class="info-text">
+          People who use our service may have uploaded your contact information to Facebook.
+          <a href="#">Learn more.</a>
+        </p>
+
+        <p class="terms">
+          By clicking Sign Up, you agree to our
+          <a href="#">Terms</a>,
+          <a href="#">Privacy Policy</a> and
+          <a href="#">Cookies Policy</a>.
+        </p>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+
+      <p class="login-link"><a href="#">Already have an account?</a></p>
+    </div>
+  </div>
+</body>
+</html>
